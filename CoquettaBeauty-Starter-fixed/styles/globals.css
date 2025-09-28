@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens (easy to tweak later) */
+:root {
+  --bg: #FAF8F6;       /* cream */
+  --text: #2C2C2C;     /* charcoal */
+  --muted: #6B7280;    /* gray-500 */
+  --accent: #A8B5A2;   /* sage */
+  --border: #E5E7EB;   /* gray-200 */
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-card border border-[var(--border)];
+}
